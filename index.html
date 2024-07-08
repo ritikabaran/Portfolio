@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/free-vector/blowing-rocket-3d-cartoon-style-icon-spaceship-launching-space-flat-vector-illustration-starting-business-startup-development-growth-education-innovation-concept_74855-25930.jpg?w=740&t=st=1685636132~exp=1685636732~hmac=f64551052652557b10356d17572d7f8d3c51eba789597f1fc835186d3319c481">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+  
+  //hamburger Toggle
+  $('.humbarger').click(function(event){
+  $('.headings').slideToggle(500);
+  event.preventDefault();
+  
+  $('.headings li a').click(function(event) {
+      if ($(window).width() < 768) {
+        $('.headings').slideUp(500);
+        event.preventDefault(); 
+      }
+    });
+  });
+  
+  });
+      </script>
+    <!-- <script src="./script.js"></script> -->
+</head>
+<body>
+    <div class="loader" id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div>D</div>
+        <div>A</div>
+        <div>O</div>
+        <div>L</div>
+    </div>
+    <div class="main1">
+      <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+      <a id="button"></a>
+        <div class="cursor"></div>
+        <div class="main-section">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./logo.jpg" alt="profilepic">
+                </div>
+                <div class="headings borderYtoX">
+                    <li><a href="#main-section">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://drive.google.com/file/d/1lZbw7L8IoTx73ffTl0h999-Losm04rdl/view" target="_blank">Resume</a></li>
+                </div>
+                <div class="humbarger">
+                  <div class="row1"></div>
+                  <div class="row2 row1"></div>
+                  <div class="row1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="left-section">
+              <h1>Hi, I 'M Ritika:<br><div class="roller">
+                <span id="rolltext">Developer<br/>
+                Learner<br/>
+                Programmer<br/>
+                <span id="spare-time">too many qualities?</span><br/>
+                </div>
+                </h1>
+              <!-- <p>Welcome, my name is  <br>Ritika Kumari</p> -->
+                <!-- <div class="responsive">
+                <div class="sign">
+                    <span class="fast-flicker">P</span>you<span class="flicker">s</span>h
+                  </div>
+                  <div class="sign1">
+                    M<span class="flicker">A</span>DAN
+                  </div>
+                  </div> -->
+            
+            <!-- <div class="animator">
+              <p>Hello 👋 I'm</p>
+              <section class="animate">
+                <div class="first"><div>Carlos Córdova</div></div>
+                <div class="second"><div>Web Developer</div></div>
+                <div class="third"><div>Systems Engineer</div></div>
+              </section>
+            </div> -->
+            </div>
+            <div class="right-section">
+                <svg width="512" height="512" viewBox="0 0 512 512" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+    <use href="#cube" x="128" y="320" stroke-width="2"  opacity="0.3">
+      <animate attributeName="stroke" dur="6s" repeatCount="indefinite"
+           values="#FF9AA2;#FFB7B2;#FFDAC1;#E2F0CB;#B5EAD7;#C7CEEA;#FF9AA2"/>
+    </use>
+    
+    <rect width="512" height="512" y="384" fill="url(#fade)"/>
+    <use href="#cube" x="128" y="128" stroke-width="2">
+      <animate attributeName="stroke" dur="6s" repeatCount="indefinite"
+           values="#FF9AA2;#FFB7B2;#FFDAC1;#E2F0CB;#B5EAD7;#C7CEEA;#FF9AA2"/>
+    </use>
+    
+    <defs>
+      <!-- EVERYTHING TOGETHER --> 
+       <g id="cube">
+        <use href="#cube_outline" stroke-linejoin="round" stroke-width="16" fill="url(#stars)"/>
+        <use href="#cube_base" stroke-width=".5"/>
+        <use href="#cube_outline" stroke-linejoin="round" stroke-width="6" stroke="#141417"/>
+      </g>	
+    
+      <g id="cube_outline">
+        <path>
+          <animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.5;0.5;1"
+          keySplines="0.8 0.2 0.6 0.9; 
+                0.8 0.2 0.6 0.9; 
+                0.8 0.2 0.6 0.9"
+          values="M10 64 L128 0 L246 64 L246 192 L128 256 L10 192Z;
+              M40 20 L216 20 L216 108 L216 236 L40 236 L40 172Z;
+              M216 20 L40 20 L40 108 L40 236 L216 236 L216 172Z;
+              M246 64 L128 0 L10 64 L10 192 L128 256 L246 192Z"/>
+        </path>
+      </g>
+    
+      <g id="cube_base">
+        <path fill="#fff1"> <!-- TOP SIDE -->
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.5;1"
+          keySplines="0.8 0.2 0.6 0.9; 
+                0.8 0.2 0.6 0.9"
+          values="M10 64 L128 0 L246 64 L128 128Z;
+              M40 20 L216 20 L216 108 L40 108Z;
+              M128 0 L246 64 L128 128 L10 64Z"/>
+        </path>
+        <path> <!-- LEFT SIDE -->
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.5;0.5;1"
+          keySplines="0.8 0.2 0.6 0.9; 
+                0.8 0.2 0.6 0.9; 
+                0.8 0.2 0.6 0.9"
+          values="M10 64 L128 128 L128 256 L10 192Z;
+              M40 20 L40 108 L40 236 L40 172Z;
+              M216 20 L216 108 L216 236 L216 172Z;
+              M246 64 L128 128 L128 256 L246 192Z"/>
+        <animate attributeName="fill" dur="1.5s" repeatCount="indefinite" keyTimes="0;0.5;0.5;1"
+          values="#fff0;#fff0;#fff2;#fff2"/>
+        </path>
+        <path fill="#407080"> <!-- LEFT SIDE -->
+        <animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.5;1"
+          keySplines="0.8 0.2 0.6 0.9; 
+                0.8 0.2 0.6 0.9"
+          values="M246 64 L128 128 L128 256 L246 192Z;
+              M216 108 L40 108 L40 236 L216 236Z;
+              M128 128 L10 64 L10 192 L128 256Z"/>
+          <animate attributeName="fill" dur="1.5s" repeatCount="indefinite" keyTimes="0;0.5;1"
+            values="#fff2;#fff1;#fff0"/>
+        </path>
+      </g>
+      <linearGradient id="fade" gradientTransform="rotate(90)">
+          <stop offset="0" stop-color="#14141700"/>
+          <stop offset="0.25" stop-color="#141417ff"/>
+        </linearGradient>
+      <linearGradient id="sky" gradientTransform="rotate(90)">
+          <stop offset="0.5" stop-color="#141417"/>
+          <stop offset="1" stop-color="#40354a"/>
+        </linearGradient>
+      
+      <!-- STARS PATTERN --> 
+      <pattern id="stars" x="0" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+        <rect width="256" height="256" fill="url(#sky)"/>
+        <use href="#star01" x="24" y="32"  fill="white"/>
+        <use href="#star01" x="64" y="96"  fill="#ad9dcb" transform="rotate(90 80 112)"/>
+        <use href="#star01" x="224" y="102"  fill="#ad9dcb"/>
+        <use href="#star01" x="192" y="112"  fill="#E0E8EA" transform="rotate(90 80 112)"/>
+        <use href="#star02" x="16" y="64"  fill="#ad9dcb"/>
+        <use href="#star03" x="96" y="16"  fill="#E0E8EA"/>
+        <use href="#star04" x="64" y="64"  fill="white"/>
+        <use href="#star04" x="8" y="16"  fill="#ad9dcb"/>
+        <use href="#star04" x="110" y="96"  fill="#E0E8EA"/>
+        <use href="#star02" x="160" y="24"  fill="#ad9dcb"/>
+        <use href="#star03" x="196" y="60"  fill="#E0E8EA"/>
+        <use href="#star04" x="64" y="212"  fill="white"/>
+        <use href="#star04" x="218" y="216"  fill="#ad9dcb"/>
+        <use href="#star03" x="228" y="220"  fill="#E0E8EA"/>
+        <use href="#star02" x="140" y="128"  fill="#ad9dcb"/>
+        <use href="#star03" x="24" y="140"  fill="#E0E8EA"/>
+        <use href="#star04" x="95" y="160"  fill="white"/>
+        <use href="#star04" x="180" y="128"  fill="#ad9dcb"/>
+        <use href="#star03" x="200" y="136"  fill="#E0E8EA"/>
+        <use href="#star10" x="120" y="120"  stroke="#E0E8EA"/>
+        <use href="#star11" x="48" y="64"  stroke="#ad9dcb"/>
+      </pattern>
+      <path id="star01" transform="scale(0.5)">
+        <animate attributeName="d" dur="3s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+          values="M16 0 Q16 16 24 16 Q16 16 16 32 Q16 16 8 16 Q16 16 16 0Z;
+              M16 8 Q16 16 32 16 Q16 16 16 24 Q16 16 0 16 Q16 16 16 8Z;
+              M16 0 Q16 16 24 16 Q16 16 16 32 Q16 16 8 16 Q16 16 16 0Z"/>
+      </path>
+      <circle id="star02">
+        <animate attributeName="r" dur="3s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+          values="0;2;0"/>
+      </circle>
+      <circle id="star03">
+        <animate attributeName="r" dur="6s" repeatCount="indefinite" calcMode="spline"
+          keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+          values="3;1;3"/>
+      </circle>
+      <circle id="star04" r="1"/>
+    
+      <path id="star10" stroke-width="2">
+        <animate attributeName="d" dur="5s" repeatCount="indefinite" 
+          keyTimes="0;0.90;0.97;1"
+          keySplines="0 0.4 1 0.2; 0 0.4 1 0.2; 0 0.4 1 0.2"
+          values="M64 0 L64 0Z; M64 0 L64 0Z; M48 12 L0 48Z; M0 48 L0 48Z"/>
+        <animate attributeName="opacity" dur="5s" repeatCount="indefinite"
+          keyTimes="0;0.90;0.97;1"
+          values="1; 1; 0.6; 0"/>
+      </path>
+      <path id="star11" stroke-width="3">
+        <animate attributeName="d" dur="6s" repeatCount="indefinite" delay="3s"
+          keyTimes="0;0.90;0.95;1"
+          keySplines="0 0.4 1 0.2; 0 0.4 1 0.2; 0 0.4 1 0.2"
+          values="M64 0 L64 0Z; M64 0 L64 0Z; M48 12 L0 48Z; M0 48 L0 48Z"/>
+        <animate attributeName="opacity" dur="6s" repeatCount="indefinite" delay="3s"
+          keyTimes="0;0.90;0.95;1"
+          values="1; 1; 0.6; 0"/>
+      </path>
+    </defs>
+    </svg>
+            </div>
+        </div>
+        <!--About Section-->
+<div id = "about">
+  <div class="container">
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%">ABOUT</text>
+    </symbol>
+
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+</div>
+  <table>
+    <tr>
+      <td>
+        <p style = "text-align:center; font-size:1.1em;color:whitesmoke;">"A code is like love; it was created with clear intentions at the beginning, but it can get complicated."<br><br> My name is Ritika and this is how everything started.</p>
+      </td>
+      <td><img src = "./me.png" id = "my-image"></td>
+    </tr>
+  </table>
+  <br><br>
+  <p>
+    <span class = "about-span">2018</span>: I passed my Highschool. Undecided on what to do next..<br><br>
+    <span class = "about-span">2018(second half)</span>: I took science with PCM after lot of discussions and chose my additional subject as Computer Science<br><br>
+    <span class = "about-span">1 week later</span>: Then there was the first class of Computer Science, and at that very moment I realised what to do next.<br><br>
+    <span class = "about-span">2019</span>: I learned a lot about programming but the most interesting lessons were the web lessons, with HTML, CSS and JavaScript. The other part that fascinated me was C++ as it was my first programming language<br><br>
+    <span class = "about-span">2020</span>: Intermediate graduation was near and for the whole 1 year , I practiced and learnt a lot of stuff and developed my final school project.<br><br>
+    <span class = "about-span">2020(second half)</span>: I passed the exam with flying colours. Now it is time to apply for a university. <br><br>
+    <span class = "about-span">2021</span>: Guess who is in college? Your guess is correct. It is me! I took a year drop and joined SJB Institute of Technology with major in Computer Science Engineering<br><br>
+    <span class = "about-span">Now</span>: Here I am now, it is 2022 and I am pursuing my passion of programming and developing great stuffs.. Wish me luck ! 
+  </p>
+</div>
+<!-- skills section -->
+<br><br><br>
+<!--Skills section-->
+<div id = "skills">
+  <div id = "skills-box">
+    <h2>Skills</h2>
+    <table id = "skills-table">
+      <tr>
+        <td>HTML</td>
+        <td><div class = "bar" style = "width:90%"></div></td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td><div class = "bar" style = "width:98%"></div></td>
+      </tr>
+      <tr>
+        <td>Javascript</td>
+        <td><div class = "bar" style = "width:85%"></div></td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td><div class = "bar" style = "width:70%"></div></td>
+      </tr>
+      <tr>
+        <td>C++</td>
+        <td><div class = "bar" style = "width:90%"></div></td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td><div class = "bar" style = "width:78%"></div></td>
+      </tr>
+      <tr>
+        <td>Django</td>
+        <td><div class = "bar" style = "width:55%"></div></td>
+      </tr>
+      <tr>
+        <td>Angular Js</td>
+        <td><div class = "bar" style = "width:80%;"></div></td>
+      </tr>
+      <tr>
+        <td>OpenGl</td>
+        <td><div class = "bar" style = "width:60%;"></div></td>
+      </tr>
+    </table>
+    <div id = "mentions">
+      <h2>Mentionable Skills</h2><br>
+      <span>Team Work</span><span>Basic Computer Network,DBMS,OS knowledge</span><span>Fluent English</span><span>Quick Learner</span><span>Effective Communication (oral and written)</span><span>Leader</span><span>Time management</span><span>Multitasking</span>
+      <h2>Experience</h2><br>
+      <p>>(October 2022 - December 2022) Indian Tech Keys</p>
+      <p>>(October-2023 - December) Powergrid Corporation of India Limited</p>
+      <!-- <p>(20xy - now)  The [personal inf] university from [city], AIA specialization. (4 years + certification)</p>
+      <p>(20xy - now) The psycho-pedagogical module at the University. (3 years + certification)</p> -->
+      <!-- </p> -->
+      <br>
+      <h2>Achievements and Others</h2>
+      <br>
+      <p>> Participation Certificate of Devfolio Hackathon</p>
+      <p>> 4 star on HackerRank in C++ language</p>
+      <p>> Completed internship on Web Programming and MS Office from Indian Tech Keys</p>
+      <p>> Completed training program on Cyber Security and Hacking</p>
+      <p>> Internship on Python Programming from Powergrid Corporation of India Limited</p>
+    </div>
+  </div>
+</div>
+<!-- project section -->
+<div class="projects" id="projects">
+    <div class="outer">
+    <div class="bg">
+    <h1>Projects</h1>
+    </div>
+    <div class="together">
+      <div class="nft">
+        <div class='main'>
+          <img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
+          <h2>Gaming Website-Avtar Arena</h2>
+          <p class='description'>Made a gaming website features news, reviews, and forums covering various games. It includes game guides, community discussions, updates on upcoming releases, and occasionally hosts online tournaments and game-related merchandise..</p>
+          <div class='tokenInfo'>
+            <div class="price">
+              <ins>◘</ins>
+              <p>HTML,CSS,JS</p>
+            </div>
+            <div class="duration">
+              <ins>◘</ins>
+              <p>OpenGL</p>
+            </div>
+          </div>
+          <hr />
+          <div class='creator'>
+            <div class='wrapper'>
+              <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+            </div>
+            <p><ins>Made by</ins> Ritika</p>
+          </div>
+        </div>
+      </div>
+  <div class="nft">
+    <div class='main'>
+      <img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
+      <h2>Car Mnagement System</h2>
+      <p class='description'>A comprehensive car management system includes a booking page for reservations, a payment page for transactions, and an available cars page displaying current inventory. It facilitates seamless scheduling and financial transactions for users.</p>
+      <div class='tokenInfo'>
+        <div class="price">
+          <ins>◘</ins>
+          <p>Python</p>
+        </div>
+        <div class="duration">
+          <ins>◘</ins>
+          <p>SQL</p>
+        </div>
+      </div>
+      <hr />
+      <div class='creator'>
+        <div class='wrapper'>
+          <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+        </div>
+        <p><ins>Made by</ins> Ritika</p>
+      </div>
+    </div>
+  </div>
+  <div class="nft">
+    <div class='main'>
+      <img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
+      <h2>3D Foundation</h2>
+      <p class='description'>A 3D foundation using GLUT functions in OpenGL establishes a graphical environment with essential features such as window creation, event handling, and rendering primitives. It enables developers to build interactive 3D applications efficiently with cross-platform capabilities.</p>
+      <div class='tokenInfo'>
+        <div class="price">
+          <ins>◘</ins>
+          <p>C</p>
+        </div>
+        <div class="duration">
+          <ins>◘</ins>
+          <p>OpenGl</p>
+        </div>
+      </div>
+      <hr />
+      <div class='creator'>
+        <div class='wrapper'>
+          <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Creator" />
+        </div>
+        <p><ins>Made by</ins> Ritika</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- contact me section -->
+<div class="contact" id="contact">
+  <div class="landing_page">
+    <div class="responsive-container-block big-container">
+      <img class="bg-img" id="iq5bf" src="https://images.pexels.com/photos/5022456/pexels-photo-5022456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+      <div class="responsive-container-block container">
+        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
+          <div class="content-box">
+            <p class="text-blk section-head">
+              Contact Page
+            </p>
+            <p class="text-blk section-subhead">
+              There are four ways, and only four ways, in which we have contact with the world. We are evaluated and classified by these four contacts: what we do, how we look, what we say, and how we say it.
+            </p>
+            <div class="icons-container">
+              <a class="share-icon" href="https://github.com/ritikabaran" target="_blank">
+                <img class="img" id="fa-github" src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Color/Github.svg">
+              </a>
+              <a class="share-icon" target="_blank" href="https://mail.google.com/mail/u/0/#inbox">
+                <img class="img" id="fa-gmail" src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Color/Gmail.svg">
+              </a>
+              <a class="share-icon" target="_blank" href="https://www.linkedin.com/in/ritikabaran/">
+                <img class="img" id="fa-linkedin" src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Color/LinkedIN.svg">
+              </a>
+              <a class="share-icon" target="_blank" href="https://www.instagram.com/ritika__.78/">
+                <img class="img" id="fa-instagram" src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Color/Instagram.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
+          <form class="form-box">
+            <div class="container-block form-wrapper">
+              <p class="text-blk contactus-head">
+                <a class="link" href="">
+                </a>
+                Contact Me
+              </p>
+              <p class="text-blk contactus-subhead">
+                Lets connect for a great work
+              </p>
+              <div class="responsive-container-block">
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-7">
+                  <input class="input" id="ijowk-7" name="FirstName" placeholder="First Name">
+                </div>
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i1ro7">
+                  <input class="input" id="indfi-5" name="Last Name" placeholder="Last Name">
+                </div>
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial" id="ityct">
+                  <input class="input" id="ipmgh-7" name="Email" placeholder="Email">
+                </div>
+                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                  <input class="input" id="imgis-6" name="PhoneNumber" placeholder="Phone Number">
+                </div>
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-7">
+                  <textarea aria-placeholder="Type message here" rows="3" cols="3"  class="textinput" id="i5vyy-7" placeholder="Type message here"></textarea>
+                </div>
+              </div>
+              <button class="submit-btn">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+    <script type="text/javascript">
+      document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#load").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#load").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    const cursor=document.querySelector(".cursor")
+    var timeout;
+    document.addEventListener("mousemove",(e)=>{
+      let x=e.pageX;
+      let y=e.pageY;
+      cursor.style.top=y+"px";
+      cursor.style.left=x+"px";
+      cursor.style.display="block";
+      function mouseStopped(){
+        cursor.style.display="none";
+      }
+      clearTimeout(timeout);
+      timeout=setTimeout(mouseStopped,1000);
+    });
+    document.addEventListener("mouseout",() =>{
+      cursor.style.display="none";
+    });
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+  </script> 
+</body>
+</html>
